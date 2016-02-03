@@ -38,6 +38,8 @@ gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 
 gem 'web-console', '~> 2.0', group: :development
 
+gem 'rack-cors', :require => 'rack/cors'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
