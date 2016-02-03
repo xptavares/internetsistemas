@@ -17,8 +17,8 @@
     <% @classrooms.each do |classroom| %>
       <tr>
         <td><%= link_to classroom.id, classroom_path(classroom) %></td>
-        <td><%= classroom.student_id %></td>
-        <td><%= classroom.course_id %></td>
+        <td><%= link_to classroom.student.name, student_path(classroom.student)  %></td>
+        <td><%= link_to classroom.course.name, course_path(classroom.course)  %></td>
         <td><%= classroom.entry_at %></td>
         <td><%=l classroom.created_at %></td>
         <td>
