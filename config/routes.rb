@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  scope :api, as: 'api' do
+    resources :classrooms
+    resources :courses
+    resources :students
+  end
+
   resources :classrooms
   resources :courses
   resources :students
